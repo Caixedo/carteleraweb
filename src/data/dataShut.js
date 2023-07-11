@@ -2,17 +2,17 @@ export const dataShut = [
   {
     title: "Lunes, Miércoles, Viernes, Domingos y Festivos",
     description: "Abierto todo el día y toda la noche.",
-    icon: ""
+    icon: true
   },
   {
     title: "Martes",
     description: "Cerrado desde las 5:00 am hasta las 4:00 pm.",
-    icon: ""
+    icon: false
   },
   {
     title: "Jueves y Sábados",
     description: "Cerrado desde las 10:00 am hasta las 4:00 pm.",
-    icon: ""
+    icon: false
   }
 ]
 

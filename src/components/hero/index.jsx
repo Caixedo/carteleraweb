@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { AiOutlineFilePdf } from 'react-icons/ai';
 
 export const Hero = ({ name, title, data }) => {
   const [selectedUrl, setSelectedUrl] = useState(data[0].url);
@@ -24,19 +25,8 @@ export const Hero = ({ name, title, data }) => {
               <div key={index} onClick={() => getUlr(item.name)} className="flex
                 gap-4 justify-start pb-8 cursor-pointer hover:px-3">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500
-                inline-flex items-center justify-center text-white relative z-10">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx="12" cy="5" r="3" />
-                    <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3" />
-                  </svg>
+                inline-flex items-center justify-center text-white relative z-10 text-2xl">
+                  < AiOutlineFilePdf />
                 </div>
                 <h2 className="font-medium title-font text-sm text-gray-900
                 hover:text-gray-400 tracking-wider py-2">

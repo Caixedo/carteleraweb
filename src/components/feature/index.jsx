@@ -2,6 +2,9 @@ import PropTypes from "prop-types";
 import { useOpenShut } from "../hook/useOpenShut";
 import { Success } from "../alerts/success";
 import { Closed } from "../alerts/closed";
+import { FaCalendarCheck } from 'react-icons/fa';
+import { FaCalendarTimes } from 'react-icons/fa';
+import { MdRecommend } from 'react-icons/md';
 
 export const Feature = ({ name, title, reverse, image, data, extraData }) => {
   const isOpen = useOpenShut();
@@ -34,17 +37,7 @@ export const Feature = ({ name, title, reverse, image, data, extraData }) => {
                 className="w-12 h-12 inline-flex items-center justify-center rounded-full mb-3
              bg-blue-500 text-white"
               >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                </svg>
+                {item.icon ? <FaCalendarCheck /> : <FaCalendarTimes />}
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -57,18 +50,9 @@ export const Feature = ({ name, title, reverse, image, data, extraData }) => {
         </div>
         <div className="flex relative py-5 sm:items-center md:w-full mx-auto">
           <div className="flex-grow md:pl-0 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div className="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-12 h-12"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
+            <div className="flex-shrink-0 w-20 h-20 bg-blue-100 text-blue-500
+            rounded-full inline-flex items-center justify-center text-5xl">
+              <MdRecommend />
             </div>
             <div className="flex-grow sm:pl-8 mt-6 sm:mt-0">
               <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
