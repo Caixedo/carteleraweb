@@ -9,13 +9,13 @@ export const Footer = () => {
           <a href className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <LogoSVG width={150} color={"#4B5563"} />
           </a>
-          <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+          {/*           <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
             © 2023 Caixedo —
             <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">
               @Copyright
             </a>
-          </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          </p> */}
+          {/*           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a href className="ml-3 text-gray-500 cursor-pointer">
               <svg
                 fill="currentColor"
@@ -42,7 +42,7 @@ export const Footer = () => {
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
               </svg>
             </a>
-          </span>
+          </span> */}
         </div>
       </div>
     </footer>
