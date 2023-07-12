@@ -13,7 +13,7 @@ export const Hero = ({ name, title, data }) => {
   return (
     <section id={name} className="text-gray-600 body-font">
       <div className="container mx-auto flex px-5 py-6 md:py-24 md:flex-row flex-col
-      items-center curs">
+      items-center pt-20">
         <div className="lg:flex-grow w-full md:w-1/3 lg:pr-24 md:pr-16 flex flex-col
         md:items-start md:text-left mb-4 md:mb-0">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900
