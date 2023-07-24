@@ -7,10 +7,10 @@ export const Cards = ({ data }) => {
         text-center my-4">
         Compromisos Mensuales
       </h2>
-      <div className="flex flex-wrap px-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 px-4 gap-4">
         {
           data.map((item, index) => (
-            <div key={index} className="lg:w-1/3">
+            <div key={index} className="2xl:w-1/3">
               <div className="h-full bg-gray-100 bg-opacity-75 p-8 rounded-lg overflow-hidden text-center relative">
                 <img src={item.image} alt={item.type} className='m-auto' />
                 <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
